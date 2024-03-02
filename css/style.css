@@ -165,6 +165,9 @@ a.registration:hover {
   transform: scale(1.05);
   color:white;
 }
+a.registration:focus {
+  color:white;
+}
 a.registration:not([href]):not([tabindex]) {
   color: white;
   text-decoration: none; }
@@ -9347,3 +9350,73 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
+
+.table-row {
+    display: block !important;
+    padding: 10px;
+}
+
+.table-search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.table-wrapper {
+  max-height: 500px;
+  overflow-y: auto;
+  scrollbar-width: none; /* For Firefox */
+}
+
+.table-search-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: -webkit-fill-available;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f2f2f2;
+}
+
+.table-collapsible {
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.table-active, .table-collapsible:hover {
+    background-color: #ccc;
+}
+
+.table-content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.sticky-row {
+  position: sticky;
+  top: 0;
+  background-color: #f2f2f2;
+  z-index: 1;
+}

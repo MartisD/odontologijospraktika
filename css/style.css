@@ -7345,7 +7345,11 @@ h1, h2, h3, h4, h5,
         color: #fff; } }
   @media (max-width: 991.98px) {
     .ftco-navbar-light .navbar-nav {
-      padding-bottom: 20px; } }
+      padding-bottom: 20px; }
+    .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+      color: #000 !important;
+    }
+     }
   .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
     font-size: 13px;
     padding-top: .9rem;
@@ -7353,7 +7357,6 @@ h1, h2, h3, h4, h5,
     padding-left: 20px;
     padding-right: 20px;
     font-weight: 400;
-    color: #000 !important;
     opacity: 1 !important; }
     @media (min-width: 992px) {
       .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
@@ -7406,14 +7409,15 @@ h1, h2, h3, h4, h5,
         -webkit-border-radius: 4px;
         -moz-border-radius: 4px;
         -ms-border-radius: 4px;
-        border-radius: 4px; } }
+        border-radius: 4px; }
+        .ftco-navbar-light .navbar-nav > .nav-item.active > a {
+          color: #60067e !important; }
+         }
     .ftco-navbar-light .navbar-nav > .nav-item.cta > a span {
       display: inline-block;
       color: #fff; }
   .ftco-navbar-light .navbar-nav > .nav-item.cta.cta-colored span {
     border-color: #60067e; }
-  .ftco-navbar-light .navbar-nav > .nav-item.active > a {
-    color: #60067e !important; }
   .ftco-navbar-light .navbar-toggler {
     border: none;
       color: rgba(0, 0, 0, 0.5) !important;
@@ -7463,12 +7467,19 @@ h1, h2, h3, h4, h5,
         background: none;
         border-radius: 0px;
         padding-left: 0rem !important;
-        padding-right: 0rem !important; } }
+        padding-right: 0rem !important; }
+        .ftco-navbar-light img{
+          -webkit-filter: invert(1);
+          filter: invert(1);
+          height: 4rem;
+        }
+       }
     @media (max-width: 767.98px) {
       .ftco-navbar-light.scrolled .navbar-nav {
         background: none;
         padding-left: 0 !important;
-        padding-right: 0 !important; } }
+        padding-right: 0 !important; }
+       }
     .ftco-navbar-light.scrolled .navbar-toggler {
       border: none;
       color: rgba(0, 0, 0, 0.5) !important;
@@ -7489,11 +7500,6 @@ h1, h2, h3, h4, h5,
       -webkit-transition: .3s all ease-out;
       -o-transition: .3s all ease-out;
       transition: .3s all ease-out; }
-      .ftco-navbar-light img{
-        -webkit-filter: invert(1);
-        filter: invert(1);
-        height: 4rem;
-      }
     .ftco-navbar-light.scrolled.sleep {
       -webkit-transition: .3s all ease-out;
       -o-transition: .3s all ease-out;
